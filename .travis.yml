@@ -1,0 +1,28 @@
+# Basic environment configuration
+language: python
+# sudo: enabled
+os: linux
+
+# apt addons:
+# cache components:
+
+# before_install:
+install: ./install.sh
+# install: true # Skips the installation step entirely
+# install: # Multiple commands
+#  - bundle install --path vendor/bundle
+#  - npm install
+
+# before_script:
+script: pytest
+
+# before_cache:
+
+# after_success:
+# after_failure:
+
+# before_deploy:
+# deploy:
+# after_deploy:
+
+# after_script:
