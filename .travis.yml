@@ -14,7 +14,7 @@ install: ./install.sh
 #  - npm install
 
 # before_script:
-# script:
+script: pytest
 
 # before_cache:
 
