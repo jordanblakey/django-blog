@@ -3,8 +3,8 @@ language: python
 sudo: enabled
 os: linux
 
-apt addons:
-cache components:
+# apt addons:
+# cache components:
 
 before_install:
 install:
