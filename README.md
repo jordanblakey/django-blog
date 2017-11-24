@@ -6,6 +6,7 @@ Basic Django blog.
 
 You will need to work in a Python virtual environment:
 
+
 - `./install.sh`
 - `source env/bin/activate` or `source env/bin/activate.fish`
 - `python djangoproject/manage.py migrate`
@@ -37,6 +38,35 @@ pip3 install mysqlclient
 
 pip install Django # Make sure that virtualenv is activated (source env/bin/activate.fish)
 ```
+
+### Pytest Usage
+
+``` bash
+# BASIC PYTEST COMMMANDS
+python -m pytest [...]
+pytest --version
+pytest --fixtures
+pytest -h | --help
+pytest -x #stop after the first failure
+pytest --maxfail=2 #setting a max number of failures
+pytest test_mod.py #testing a single module
+pytest testing/ #testing in a directory
+pytest -k "MyClass and not method" # run tests that match the given string expression, including filenames, class names, and function names as variables.
+
+
+# MODIFYING PYTHON TRACEBACK PRINTING
+pytest --showlocals # show local variables in tracebacks
+pytest -l           # show local variables (shortcut)
+
+pytest --tb=auto    # (default) 'long' tracebacks for the first and last
+                     # entry, but 'short' style for the other entries
+pytest --tb=long    # exhaustive, informative traceback formatting
+pytest --tb=short   # shorter traceback format
+pytest --tb=line    # only one line per failure
+pytest --tb=native  # Python standard library formatting
+pytest --tb=no      # no traceback at all
+```
+
 
 ---
 
