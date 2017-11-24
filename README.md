@@ -1,6 +1,16 @@
-# Django
+# Django Blog
 
-Basic Django blog. 
+[![Build Status](https://travis-ci.org/jordanblakey/django-blog.svg?branch=master)](https://travis-ci.org/jordanblakey/django-blog)
+
+Basic Django blog.
+
+You will need to work in a Python virtual environment:
+
+- `./install.sh`
+- `source env/bin/activate` or `source env/bin/activate.fish`
+- `python djangoproject/manage.py migrate`
+
+### Some assorted commands that may be useful
 
 ``` bash
 python # ensure you have python installed
