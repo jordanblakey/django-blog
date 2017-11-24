@@ -7,7 +7,11 @@ os: linux
 # cache components:
 
 before_install:
-install:
+install: ./install.sh
+# install: true # Skips the installation step entirely
+# install: # Multiple commands
+#  - bundle install --path vendor/bundle
+#  - npm install
 
 before_script:
 script:
