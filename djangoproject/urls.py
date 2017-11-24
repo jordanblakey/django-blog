@@ -14,10 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 
+# allows including urls from subfolders.
 from django.conf.urls import url, include
+
+# import admin object from django.contrib
 from django.contrib import admin
 
+# URL patterns to match
 urlpatterns = [
+    # for all urls from the root, pass the urls.py from posts app.
+    url(r'^$', include('posts.urls')),
+
+    # pass urls from the built-in admin app in Django
     url(r'^admin/', admin.site.urls),
-    url(r'^posts/', include('posts.urls'))
+
+    # this seems redundant but does the same thing as the first pattern
+    url(r'^posts/', include('posts.urls')),
+
+    # Expect & pass the router a URL w/ an id,
+    # Function 'details' from views.py
+    # the varable name with string 'details' (not sure what this does)
 ]
