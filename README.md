@@ -1,6 +1,6 @@
 # Django
 
-Basic Django blog.
+Basic Django blog. 
 
 ``` bash
 python # ensure you have python installed
