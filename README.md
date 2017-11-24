@@ -1,4 +1,6 @@
-# Django
+# Django Blog
+
+[![Build Status](https://travis-ci.org/jordanblakey/django-blog.svg?branch=master)](https://travis-ci.org/jordanblakey/django-blog)
 
 Basic Django blog.
 
